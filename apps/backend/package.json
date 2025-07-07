@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend for LLM experiments",
+  "scripts": {
+    "predev": "command -v uv >/dev/null 2>&1 || (echo '❌ UV not installed. Please install it first: curl -LsSf https://astral.sh/uv/install.sh | sh' && exit 1)",
+    "dev": "make run-local",
+    "dev:docker": "make run",
+    "build": "make docker-build",
+    "test": "make test",
+    "lint": "make lint",
+    "format": "make format",
+    "docker:build": "make docker-build",
+    "docker:run": "make docker-run",
+    "clean": "make clean",
+    "type-check": "make type-check",
+    "install:deps": "make dev-install"
+  }
+}
