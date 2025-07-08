@@ -20,6 +20,10 @@
     "dev:local": {
       "cache": false,
       "persistent": true
+    },
+    "generate-client": {
+      "cache": false,
+      "persistent": true
     }
   }
 }

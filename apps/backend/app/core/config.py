@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     port: int = 8900
     reload: bool = True
     lifespan: LifespanType = "on"
+    openai_api_key: str = ""
 
     model_config = {"env_file": ".env", "case_sensitive": False}
 
