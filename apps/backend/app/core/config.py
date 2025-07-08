@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     reload: bool = True
     lifespan: LifespanType = "on"
     openai_api_key: str = ""
+    oci_api_key: str = ""
 
     model_config = {"env_file": ".env", "case_sensitive": False}
 

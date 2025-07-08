@@ -27,7 +27,7 @@ sync:
 run: docker-dev
 
 run-local:
-	uv run uvicorn app.main:app --host 0.0.0.0 --port 8900 --reload
+	uv run uvicorn app.main:app --host 0.0.0.0 --port 8900 --reload --log-level debug
 
 test:
 	uv run pytest
@@ -55,5 +55,5 @@ docker-run:
 	docker run -p 8900:8900 --env-file .env llm-experiments-backend
 
 docker-dev:
-	docker run -p 8900:8900 --env-file .env -v $(PWD)/app:/app/app --rm llm-experiments-backend uv run uvicorn app.main:app --host 0.0.0.0 --port 8900 --reload
+	docker run -p 8900:8900 --env-file .env -v $(PWD)/app:/app/app --rm llm-experiments-backend uv run uvicorn app.main:app --host 0.0.0.0 --port 8900 --reload --log-level debug
 	docker run -p 8000:8900 --env-file .env llm-experiments-backend
