@@ -17,7 +17,7 @@
       "cache": false,
       "persistent": true
     },
-    "dev:docker": {
+    "dev:local": {
       "cache": false,
       "persistent": true
     }

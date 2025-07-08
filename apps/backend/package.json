@@ -5,8 +5,8 @@
   "description": "Backend for LLM experiments",
   "scripts": {
     "predev": "command -v uv >/dev/null 2>&1 || (echo '❌ UV not installed. Please install it first: curl -LsSf https://astral.sh/uv/install.sh | sh' && exit 1)",
-    "dev": "make run-local",
-    "dev:docker": "make run",
+    "dev": "make run",
+    "dev:local": "make run-local",
     "build": "make docker-build",
     "test": "make test",
     "lint": "make lint",
